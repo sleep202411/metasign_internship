@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', 'Noto Sans SC', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: #343434;
+      }
+
+      .slide {
+        width: 1280px;
+        height: 720px;
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+        background-image: linear-gradient(to top right,rgb(252, 253, 254), rgb(232, 244, 252));
+      }
+    </style>
+  </head>
+  <body>
+    <main class="slide relative overflow-hidden">
+      <!-- 内容区域 -->
+      <div class="z-10 h-full flex flex-col mx-20">
+        <!-- 顶部区域 -->
+        <div class="flex-1 pb-4">
+          <!-- 主标题 -->
+          <h1 class="text-4xl pt-16 pb-8 font-bold text-gray-900 h-32 flex items-center gap-2">
+            <i class="fas fa-city"></i>
+            智慧城市内涵
+          </h1>
+
+          <!-- 背景图片 -->
+          <div class="absolute inset-0 h-1/2 top-32">
+            <img
+              src="https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg"
+              alt="背景图片"
+              class="w-full h-full object-cover"
+            />
+            <!-- 使用渐变模拟城市天际线背景 -->
+            <div
+              class="absolute inset-0 bg-[linear-gradient(to_top_right,rgba(46,123,197,1)_0%,rgba(46,123,197,1)_30%,rgba(46,123,197,0.5)_60%,rgba(46,123,197,0)_100%)]"
+            ></div>
+          </div>
+
+          <div class="mt-16 relative z-10">
+            <!-- 基本理念横幅 -->
+            <div class="bg-blue-600 text-white px-8 py-4 rounded-lg inline-block shadow-lg">
+              <span class="text-xl font-semibold">基本理念:在一个城市中实现"四化"为一体</span>
+            </div>
+
+            <!-- 四化图标区域 -->
+            <div class="mt-8 flex gap-5">
+              <!-- 部门信息化 -->
+              <div
+                class="border-2 bg-blue-100/20 border-blue-100/40 rounded-lg p-4 flex items-center justify-center gap-2"
+              >
+                <i class="fas fa-building text-blue-100 text-xl shrink-0"></i>
+                <span class="text-sm text-blue-100">部门信息化</span>
+              </div>
+
+              <!-- 城市信息化 -->
+              <div
+                class="border-2 bg-blue-100/20 border-blue-100/40 rounded-lg p-4 flex items-center justify-center gap-2"
+              >
+                <i class="fas fa-city text-blue-100 text-xl shrink-0"></i>
+                <span class="text-sm text-blue-100">城市信息化</span>
+              </div>
+
+              <!-- 社会信息化 -->
+              <div
+                class="border-2 bg-blue-100/20 border-blue-100/40 rounded-lg p-4 flex items-center justify-center gap-2"
+              >
+                <i class="fas fa-users text-blue-100 text-xl shrink-0"></i>
+                <span class="text-sm text-blue-100">社会信息化</span>
+              </div>
+
+              <!-- 企业信息化 -->
+              <div
+                class="border-2 bg-blue-100/20 border-blue-100/40 rounded-lg p-4 flex items-center justify-center gap-2"
+              >
+                <i class="fas fa-industry text-blue-100 text-xl shrink-0"></i>
+                <span class="text-sm text-blue-100">企业信息化</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部白色区域 -->
+        <div class="bg-white px-16 py-10 shadow-2xl absolute bottom-16 left-20 right-20 rounded-3xl shadow-blue-700/20">
+          <div class="grid grid-cols-3 gap-20">
+            <!-- 第一列 -->
+            <div class="flex flex-col">
+              <h3 class="text-blue-600 font-bold text-xl leading-tight">通过技术应用,数字化采集和获取城市资源</h3>
+              <div class="h-px w-full bg-linear-to-r from-transparent via-blue-600 to-transparent my-4"></div>
+              <p class="text-gray-700 leading-relaxed">
+                通过网络化、物联化、智能化技术应用,整合整个城市所涉及的综合管理与公共服务信息资源,以数字化的形式进行采集和获取
+              </p>
+            </div>
+
+            <!-- 第二列 -->
+            <div class="flex flex-col">
+              <h3 class="text-blue-600 font-bold text-xl leading-tight">通过城市大平台和大数据统一管理应用</h3>
+              <div class="h-px w-full bg-linear-to-r from-transparent via-blue-600 to-transparent my-4"></div>
+              <p class="text-gray-700 leading-relaxed">
+                通过智慧城市大平台和大数据进行统一的存储、优化、管理、展现应用
+              </p>
+            </div>
+
+            <!-- 第三列 -->
+            <div class="flex flex-col">
+              <h3 class="text-blue-600 font-bold text-xl leading-tight">实现城市信息的综合管理和数据共享</h3>
+              <div class="h-px w-full bg-linear-to-r from-transparent via-blue-600 to-transparent my-4"></div>
+              <p class="text-gray-700 leading-relaxed">
+                实现城市综合管理和公共服务信息的互联互通、数据共享交换、业务功能协同
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

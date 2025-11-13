@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", "Noto Sans SC", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: #343434;
+      }
+
+      .slide {
+        width: 1280px;
+        height: 720px;
+        overflow: hidden;
+        position: relative;
+        /* 必须根据用户的design-system，修改背景, 不要使用固定的颜色，要遵循design-system的规定 */
+        background-color: rgb(255, 255, 255);
+        background-image: linear-gradient(
+          to top right,
+          rgb(252, 252, 252),
+          rgb(232, 244, 252)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <main class="slide bg-blue-50 flex flex-col">
+      <!-- 标题部分 -->
+       <!-- 必须根据用户的design-system，修改背景图片，要遵循design-system的规定 -->
+      <div
+        class="bg-cover bg-center p-14"
+        style="
+          background-image: url('https://ts3.tc.mm.bing.net/th/id/OIP-C.5kop2QNcCejxY1Wn6qXOrgHaE1?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3');
+        "
+      >
+        <h1 class="text-4xl font-bold text-black flex items-center">
+          <i class="fas fa-mountain mr-4 text-amber-900/80"></i>
+          矿产资源开发利用水平调查评估制度
+        </h1>
+      </div>
+
+      <!-- 主要内容 -->
+      <div class="bg-amber-800/20 flex flex-col flex-1">
+        <!-- 上半部分 - 白色背景 -->
+        <div class="flex-1 bg-white flex flex-col p-10 mb-3">
+          <!-- 总体目标标题 -->
+          <!-- 必须根据用户的design-system，修改标题颜色，要遵循design-system的规定 -->
+          <h2 class="text-3xl font-bold text-amber-900/80 mb-4 pl-8">
+            总体目标
+          </h2>
+
+          <!-- 总体目标内容 -->
+          <div
+            class="text-gray-700 text-2xl leading-relaxed justify-center items-center flex pl-8"
+          >
+            到2020年，建成调查评估常态化、科学化、标准化和激励约束差别化的开发利用水平调查评估制度，基本建立主要矿种"三率"指标体系，提升矿产资源开发利用水平，促进生态文明建设。
+          </div>
+        </div>
+
+        <!-- 下半部分 - 棕色背景 -->
+        <!-- 必须根据用户的design-system，修改渐变背景颜色，要遵循design-system的规定 -->
+        <div
+          class="flex-1 bg-gradient-to-r from-amber-900/60 to-amber-900/80 flex flex-col p-10"
+        >
+          <!-- 基本原则标题 -->
+          <h2 class="text-3xl font-bold text-white mb-4 pl-8">基本原则</h2>
+
+          <!-- 基本原则内容 -->
+          <div
+            class="text-white text-2xl leading-relaxed justify-center items-center flex pl-8 pr-4"
+          >
+            围绕矿产资源开发利用全过程，在采矿、选矿和综合利用的重点环节，解决"调查评估的内容、方式、指标要求和评估结果应用"等关键问题，划定两个"界线"（"三率"最低指标和领跑者指标），出台一个"办法"（矿产资源开发利用水平调查评估办法），完善一个机制—激励约束机制，提高矿产资源开发利用水平。
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
